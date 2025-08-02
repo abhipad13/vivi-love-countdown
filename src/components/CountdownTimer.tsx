@@ -9,9 +9,8 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    // Calculate target date (20 days from now)
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 20);
+    // Target date: August 21st at 1 PM
+    const targetDate = new Date('2025-08-21T13:00:00');
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
