@@ -8,12 +8,19 @@ const BackgroundMusic = () => {
   useEffect(() => {
     // Start playing after user interaction due to browser autoplay policies
     const handleUserInteraction = () => {
+      console.log('User interaction detected, hasInteracted:', hasInteracted);
       if (!hasInteracted) {
         setHasInteracted(true);
         if (audioRef.current) {
+          console.log('Attempting to play audio:', audioRef.current.src);
           audioRef.current.play().then(() => {
+            console.log('Audio started playing successfully');
             setIsPlaying(true);
-          }).catch(console.log);
+          }).catch((error) => {
+            console.error('Audio play failed:', error);
+          });
+        } else {
+          console.error('Audio ref is null');
         }
       }
     };
