@@ -46,7 +46,7 @@ const SecretMessage = () => {
             My Dearest Vivi 💕
           </div>
           <p className="text-romantic-deep leading-relaxed font-medium text-lg">
-            Every day without you feels so long, but just knowing we'll be together again soon makes me so happy. You're my sunshine, my everything, and the love of my life. This little website is just a tiny way to show how much you mean to me. I can't wait to hug you tight, kiss that cute little nose mole a hundred times, and finally go to that pottery place we've been talking about. And of course, have way too much Chipotle — because that's our thing. You make every single day feel magical, and I'm counting the moments until we're together again.
+            Every day without you feels so long, but just knowing we'll be together again soon makes me so happy. You're my gudlu, my everything, and the love of my life. This little website is just a tiny way to show how much you mean to me. I can't wait to hug you tight, kiss that cute little nose mole a hundred times, and finally go to that pottery place we've been talking about. And of course eat chipotle, have pizza uncommon pesto pizza and go to insomnia — because that's our thing. You make every single day feel magical, and I'm counting the moments until we're together again.
           </p>
           <div className="mt-6 font-romantic text-2xl text-primary">
             Forever yours, with all my love 💖
