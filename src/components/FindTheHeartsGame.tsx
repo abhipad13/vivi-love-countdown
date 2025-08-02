@@ -1,21 +1,19 @@
 import { useState, useEffect } from "react";
-import { Heart, Sparkles } from "lucide-react";
+import { Heart } from "lucide-react";
 import { toast } from "sonner";
-import { Link } from "react-router-dom";
 
 const FindTheHeartsGame = () => {
   const [foundHearts, setFoundHearts] = useState<number[]>([]);
   const [gameCompleted, setGameCompleted] = useState(false);
-  const [showSurpriseButton, setShowSurpriseButton] = useState(false);
   
   const hearts = [
-    { id: 1, message: "You make me laugh every day 😊", position: "top-20 left-10" },
-    { id: 2, message: "You're my sunshine ☀️", position: "top-1/4 right-16" },
-    { id: 3, message: "Your hugs are my favorite place 🤗", position: "top-1/2 left-1/4" },
-    { id: 4, message: "You make ordinary moments magical ✨", position: "bottom-1/3 right-1/4" },
-    { id: 5, message: "I love your silly jokes 🤪", position: "bottom-20 left-16" },
-    { id: 6, message: "You're my best friend and soulmate 💕", position: "top-1/3 left-1/2" },
-    { id: 7, message: "You make my heart skip a beat 💓", position: "bottom-1/4 right-10" }
+    { id: 1, message: "You are the prettiest most beautiful girl everrr", position: "top-20 left-10" },
+    { id: 2, message: "I am so grateful for the fine trees in this world", position: "top-1/4 right-16" },
+    { id: 3, message: "I love cuddling naked together it's so cozy", position: "top-1/2 left-1/4" },
+    { id: 4, message: "You make me a better person everyday", position: "bottom-1/3 right-1/4" },
+    { id: 5, message: "I can't wait to watch NBA with you", position: "bottom-20 left-16" },
+    { id: 6, message: "Vivi you are truly the best friend I never had", position: "top-1/3 left-1/2" },
+    { id: 7, message: "You are the most caring person I have ever met", position: "bottom-1/4 right-10" }
   ];
 
   const handleHeartClick = (heartId: number, message: string) => {
@@ -37,7 +35,7 @@ const FindTheHeartsGame = () => {
       setGameCompleted(true);
       setTimeout(() => {
         toast("🎉 You found all my love notes! You know me so well! ❤️", {
-          duration: 2000,
+          duration: 5000,
           style: {
             background: 'linear-gradient(135deg, #e91e63, #ad1457)',
             border: '1px solid #ad1457',
@@ -46,8 +44,6 @@ const FindTheHeartsGame = () => {
             fontWeight: 'bold'
           }
         });
-        // Show surprise button after toast
-        setTimeout(() => setShowSurpriseButton(true), 1000);
       }, 500);
     }
   }, [foundHearts, gameCompleted]);
@@ -101,21 +97,6 @@ const FindTheHeartsGame = () => {
           ))}
         </div>
       </div>
-
-      {/* Surprise unlock button */}
-      {showSurpriseButton && (
-        <div className="fixed bottom-4 right-4 z-50 animate-fade-in">
-          <Link
-            to="/spin-wheel"
-            className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-romantic-pink to-romantic-rose text-white rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse group"
-          >
-            <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-            <span className="font-elegant font-bold">
-              You found all my love notes! Click for a surprise! ✨
-            </span>
-          </Link>
-        </div>
-      )}
     </>
   );
 };
