@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-import { Heart } from "lucide-react";
+import { Heart, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import { Link } from "react-router-dom";
 
 const FindTheHeartsGame = () => {
   const [foundHearts, setFoundHearts] = useState<number[]>([]);
   const [gameCompleted, setGameCompleted] = useState(false);
+  const [showSurpriseButton, setShowSurpriseButton] = useState(false);
   
   const hearts = [
     { id: 1, message: "You make me laugh every day 😊", position: "top-20 left-10" },
@@ -44,6 +46,8 @@ const FindTheHeartsGame = () => {
             fontWeight: 'bold'
           }
         });
+        // Show surprise button after toast
+        setTimeout(() => setShowSurpriseButton(true), 1000);
       }, 500);
     }
   }, [foundHearts, gameCompleted]);
@@ -97,6 +101,21 @@ const FindTheHeartsGame = () => {
           ))}
         </div>
       </div>
+
+      {/* Surprise unlock button */}
+      {showSurpriseButton && (
+        <div className="fixed bottom-4 right-4 z-50 animate-fade-in">
+          <Link
+            to="/spin-wheel"
+            className="flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-romantic-pink to-romantic-rose text-white rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 animate-pulse group"
+          >
+            <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+            <span className="font-elegant font-bold">
+              You found all my love notes! Click for a surprise! ✨
+            </span>
+          </Link>
+        </div>
+      )}
     </>
   );
 };
