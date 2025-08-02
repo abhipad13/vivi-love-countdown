@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { TreePine } from 'lucide-react';
 
 const SecretMessage = () => {
   const [isRevealed, setIsRevealed] = useState(false);
@@ -15,13 +16,18 @@ const SecretMessage = () => {
       
       <div className="flex justify-center mb-8">
         <div 
-          className="heart-shape cursor-pointer relative"
+          className="relative cursor-pointer group"
           onClick={handleReveal}
           role="button"
           tabIndex={0}
           onKeyDown={(e) => e.key === 'Enter' && handleReveal()}
         >
-          {/* Sparkles around the heart */}
+          <TreePine 
+            size={80} 
+            className="text-romantic-rose hover:text-primary transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
+            style={{ filter: 'drop-shadow(0 4px 8px rgba(340, 75%, 55%, 0.3))' }}
+          />
+          {/* Sparkles around the tree */}
           <div className="sparkle" style={{ top: '10px', left: '10px', animationDelay: '0s' }}></div>
           <div className="sparkle" style={{ top: '5px', right: '15px', animationDelay: '0.5s' }}></div>
           <div className="sparkle" style={{ bottom: '20px', left: '20px', animationDelay: '1s' }}></div>
@@ -30,7 +36,7 @@ const SecretMessage = () => {
       </div>
       
       <p className="text-romantic-deep/70 mb-6 font-medium">
-        Click the heart above to reveal your secret message ✨
+        Click the tree above to reveal your secret message 🌸
       </p>
       
       {isRevealed && (
