@@ -27,9 +27,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-white/20"></div>
         <div className="relative z-10 text-center px-4">
           <h1 className={`font-romantic text-6xl md:text-8xl text-white mb-8 drop-shadow-lg ${showContent ? 'animate-fade-in-up' : 'opacity-0'}`}>Happy Girlfriend's Day, Vivi </h1>
-          <p className={`font-elegant text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow ${showContent ? 'animate-fade-in-up animate-delay-1' : 'opacity-0'}`}>
-            A special celebration of our beautiful love story and all the magical moments we've shared together
-          </p>
+          <p className={`font-elegant text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow ${showContent ? 'animate-fade-in-up animate-delay-1' : 'opacity-0'}`}>I love you so much, my duniya — my whole world, my everything. You mean more to me than words can ever capture, and every day with you feels like a gift.</p>
         </div>
         
         {/* Decorative sparkles */}
@@ -65,9 +63,35 @@ const Index = () => {
       {showContent && <>
           <FindTheHeartsGame />
           
-          {/* Secret Message Section */}
+          {/* Love Letter Section */}
           <section className="py-20 px-4 max-w-4xl mx-auto">
-            <SecretMessage />
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-lg border border-romantic-pink animate-fade-in-up">
+              <h2 className="font-romantic text-5xl text-center text-romantic-deep mb-8">
+                A Love Letter to You 💕
+              </h2>
+              <div className="prose prose-lg max-w-none text-romantic-deep/90">
+                <p className="font-elegant text-xl leading-relaxed mb-6">
+                  My Dearest Vivi,
+                </p>
+                <p className="leading-relaxed mb-6 text-lg">
+                  As I sit here thinking about you, my heart overflows with so much love that I can barely contain it. 
+                  You are the most incredible person I've ever met, and every day with you feels like a beautiful dream 
+                  that I never want to wake up from.
+                </p>
+                <p className="leading-relaxed mb-6 text-lg">
+                  Your smile brightens even my darkest days, your laugh is the most beautiful melody I've ever heard, 
+                  and your love has transformed my entire world. You make me want to be the best version of myself, 
+                  and with you by my side, I feel like I can conquer anything.
+                </p>
+                <p className="leading-relaxed mb-6 text-lg">
+                  Thank you for being my partner, my best friend, my greatest love, and my home. Thank you for 
+                  choosing to share your beautiful heart with me every single day.
+                </p>
+                <p className="font-elegant text-xl">
+                  With all my love, today and always ✨
+                </p>
+              </div>
+            </div>
           </section>
 
           {/* Photo Gallery Section */}
@@ -80,6 +104,10 @@ const Index = () => {
             <FavoriteMemories />
           </section>
 
+          {/* Secret Message Section */}
+          <section className="py-20 px-4 max-w-4xl mx-auto">
+            <SecretMessage />
+          </section>
 
           {/* Countdown Timer Section */}
           <section className="py-20 px-4 max-w-2xl mx-auto">
