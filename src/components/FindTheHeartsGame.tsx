@@ -54,18 +54,21 @@ const FindTheHeartsGame = () => {
       {hearts.map((heart) => (
         <div
           key={heart.id}
-          className={`fixed ${heart.position} z-50 cursor-pointer transition-all duration-300 ${
+          className={`fixed ${heart.position} z-[100] cursor-pointer transition-all duration-300 ${
             foundHearts.includes(heart.id) 
               ? 'opacity-0 scale-0' 
-              : 'opacity-70 hover:opacity-100 hover:scale-110'
+              : 'opacity-90 hover:opacity-100 hover:scale-125'
           }`}
           onClick={() => handleHeartClick(heart.id, heart.message)}
+          style={{
+            pointerEvents: foundHearts.includes(heart.id) ? 'none' : 'auto'
+          }}
         >
           <Heart 
-            className={`w-6 h-6 ${
+            className={`w-8 h-8 ${
               foundHearts.includes(heart.id) 
                 ? 'text-gray-400' 
-                : 'text-romantic-deep hover:text-romantic-deep/90 animate-pulse'
+                : 'text-pink-500 hover:text-pink-600 animate-pulse drop-shadow-lg'
             }`}
             fill="currentColor"
           />

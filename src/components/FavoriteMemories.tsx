@@ -102,8 +102,8 @@ const FavoriteMemories = () => {
             ))}
           </CarouselContent>
           
-          <CarouselPrevious className="bg-white/80 hover:bg-white border-romantic-pink text-romantic-deep shadow-lg" />
-          <CarouselNext className="bg-white/80 hover:bg-white border-romantic-pink text-romantic-deep shadow-lg" />
+          <CarouselPrevious className="bg-white/80 hover:bg-white border-romantic-pink text-romantic-deep shadow-lg -left-16" />
+          <CarouselNext className="bg-white/80 hover:bg-white border-romantic-pink text-romantic-deep shadow-lg -right-16" />
         </Carousel>
         
         <p className="text-center mt-6 text-romantic-deep/70 font-elegant text-sm">
