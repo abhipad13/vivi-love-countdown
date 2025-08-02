@@ -3,13 +3,13 @@ const FavoriteMemories = () => {
   // Organize memories into pages (2 memories per page)
   const memories = [{
     id: 1,
-    src: "https://images.unsplash.com/photo-1524863479829-916d8e77f114",
+    src: "https://i.imgur.com/a95GeXO.jpeg",
     alt: "Special memory together",
     title: "The Day We Met",
     description: "I still remember how nervous I was when I first saw you. Your smile lit up the entire room, and I knew right away that you were someone special. That moment changed my life forever."
   }, {
     id: 2,
-    src: "https://i.imgur.com/iLlPLC7.jpeg",
+    src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
     alt: "Romantic getaway",
     title: "Our First Trip Together",
     description: "That weekend getaway where we got lost but didn't care because we had each other. We discovered that little café with the amazing pastries and spent hours just talking and dreaming about our future."
