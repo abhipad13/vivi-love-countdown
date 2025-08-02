@@ -1,17 +1,17 @@
 const PhotoGallery = () => {
   const photos = [{
     id: 1,
-    src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2",
+    src: "/images/photo1.jpg",
     alt: "Romantic couple photo placeholder",
     caption: "Our first date 💕"
   }, {
     id: 2,
-    src: "https://images.unsplash.com/photo-1473177104440-ffee2f230b8f",
+    src: "/images/photo2.jpg",
     alt: "Beautiful couple moment",
     caption: "That perfect sunset 🌅"
   }, {
     id: 3,
-    src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",
+    src: "/images/photo3.jpg",
     alt: "Happy couple together",
     caption: "Laughing together 😊"
   }];
