@@ -5,6 +5,7 @@ import SecretMessage from '@/components/SecretMessage';
 import PhotoGallery from '@/components/PhotoGallery';
 import FavoriteMemories from '@/components/FavoriteMemories';
 import BackgroundMusic from '@/components/BackgroundMusic';
+import FindTheHeartsGame from '@/components/FindTheHeartsGame';
 
 const Index = () => {
   const [showContent, setShowContent] = useState(false);
@@ -50,6 +51,8 @@ const Index = () => {
 
       {showContent && (
         <>
+          <FindTheHeartsGame />
+          
           {/* Love Letter Section */}
           <section className="py-20 px-4 max-w-4xl mx-auto">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-lg border border-romantic-pink animate-fade-in-up">
