@@ -58,7 +58,9 @@ const FavoriteMemories = () => {
                           <div className="relative">
                             {/* Polaroid-style photo frame */}
                             <div className="bg-white p-3 pb-6 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                              <img src={memory.src} alt={memory.alt} className="w-full h-64 object-cover rounded" loading="lazy" />
+                              <div className="aspect-[3/4] w-full overflow-hidden rounded">
+                                <img src={memory.src} alt={memory.alt} className="w-full h-full object-cover" loading="lazy" />
+                              </div>
                               <div className="text-center mt-2 font-elegant text-sm text-gray-600">
                                 {memory.title}
                               </div>
