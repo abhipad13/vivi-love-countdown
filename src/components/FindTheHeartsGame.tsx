@@ -37,7 +37,7 @@ const FindTheHeartsGame = () => {
       setGameCompleted(true);
       setTimeout(() => {
         toast("🎉 You found all my love notes! You know me so well! ❤️", {
-          duration: 5000,
+          duration: 2000,
           style: {
             background: 'linear-gradient(135deg, #e91e63, #ad1457)',
             border: '1px solid #ad1457',
