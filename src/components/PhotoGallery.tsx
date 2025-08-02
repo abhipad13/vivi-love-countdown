@@ -1,19 +1,19 @@
 const PhotoGallery = () => {
   const photos = [{
     id: 1,
-    src: "https://i.imgur.com/esRusJy.jpeg",
+    src: "https://i.imgur.com/NdGzkCZ.jpeg",
     alt: "Romantic couple photo placeholder",
-    caption: "Our first date 💕"
+    caption: "The most beautiful princess 💕"
   }, {
     id: 2,
-    src: "https://images.unsplash.com/photo-1473177104440-ffee2f230b8f",
+    src: "https://i.imgur.com/6vawBPV.jpeg",
     alt: "Beautiful couple moment",
-    caption: "That perfect sunset 🌅"
+    caption: "um how are u so hot? 💋"
   }, {
     id: 3,
-    src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",
+    src: "https://i.imgur.com/2jmPCMC.jpeg",
     alt: "Happy couple together",
-    caption: "Laughing together 😊"
+    caption: "You are SOOOO PRETTYY"
   }];
   return <div className="animate-fade-in-up animate-delay-1">
       <h3 className="font-romantic text-4xl text-center text-romantic-deep mb-12">My Prettiest Vivi 📸</h3>
