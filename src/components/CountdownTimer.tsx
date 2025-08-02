@@ -31,9 +31,12 @@ const CountdownTimer = () => {
 
   return (
     <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-romantic-pink animate-fade-in-up">
-      <h3 className="font-romantic text-3xl text-center text-romantic-deep mb-6">
+      <h3 className="font-romantic text-3xl text-center text-romantic-deep mb-2">
         Until I See You Again ✨
       </h3>
+      <p className="font-elegant text-lg text-center text-romantic-deep/80 mb-6">
+        August 21st at 1:00 PM
+      </p>
       
       <div className="grid grid-cols-4 gap-4 text-center">
         <div className="bg-romantic-blush rounded-xl p-4">
