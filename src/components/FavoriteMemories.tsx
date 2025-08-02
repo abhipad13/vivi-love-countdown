@@ -3,28 +3,28 @@ const FavoriteMemories = () => {
   // Organize memories into pages (2 memories per page)
   const memories = [{
     id: 1,
-    src: "https://i.imgur.com/a95GeXO.jpeg",
+    src: "https://images.unsplash.com/photo-1524863479829-916d8e77f114",
     alt: "Special memory together",
     title: "The Day We Met",
-    description: "I still remember how nervous I was when I first saw you. Your smile lit up the entire room, and I knew right away that you were someone special. That moment changed my life forever."
+    description: "I still remember nervous I was around you when we first started dating. I always had butterflies in my stomach next to you. And your smile makes me so happy."
   }, {
     id: 2,
-    src: "https://i.imgur.com/F1Fo5tl.jpeg",
+    src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
     alt: "Romantic getaway",
     title: "Our First Trip Together",
-    description: "That weekend getaway where we got lost but didn't care because we had each other. We discovered that little café with the amazing pastries and spent hours just talking and dreaming about our future."
+    description: "That weekend getaway when we went to UIUC was only fun because of you. I can't believe how we are able to have fun and make memories just by being with ourselves."
   }, {
     id: 3,
-    src: "https://i.imgur.com/sGOU6Zp.jpeg",
+    src: "https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e",
     alt: "Cozy moments",
     title: "Movie Nights & Cuddles",
-    description: "All those cozy Friday nights watching movies, sharing popcorn, and falling asleep in each other's arms. These simple moments are the ones I treasure most - just being together is pure magic."
+    description: "All those cozy Friday nights watching movies, sharing biryani, and falling asleep in each other's arms. These simple moments are the ones I treasure most."
   }, {
     id: 4,
-    src: "https://i.imgur.com/ktfIPqv.jpeg",
+    src: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46",
     alt: "Dancing together",
     title: "Dancing in the Kitchen",
-    description: "That random Tuesday when our favorite song came on while we were cooking dinner, and we ended up dancing in the kitchen. No music needed - just your laughter was the perfect soundtrack."
+    description: "That day when we went ice skating and played outside in the snow was so fun. And I still remember how you fell trying to help me up after I fell. That was so cute and funny."
   }];
 
   // Group memories into pages of 2
