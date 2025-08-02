@@ -14,11 +14,6 @@ const PhotoGallery = () => {
     src: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486",
     alt: "Happy couple together",
     caption: "Laughing together 😊"
-  }, {
-    id: 4,
-    src: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46",
-    alt: "Couple holding hands",
-    caption: "Hand in hand 💗"
   }];
   return <div className="animate-fade-in-up animate-delay-1">
       <h3 className="font-romantic text-4xl text-center text-romantic-deep mb-12">My Prettiest Vivi 📸</h3>
