@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import FloatingHearts from '@/components/FloatingHearts';
 import CountdownTimer from '@/components/CountdownTimer';
 import SecretMessage from '@/components/SecretMessage';
@@ -84,6 +85,22 @@ const Index = () => {
           {/* Countdown Timer Section */}
           <section className="py-20 px-4 max-w-2xl mx-auto">
             <CountdownTimer />
+          </section>
+
+          {/* Spin Wheel Secret Section */}
+          <section className="py-20 px-4 max-w-2xl mx-auto text-center">
+            <h2 className="font-romantic text-3xl text-romantic-deep mb-6">
+              🎡 Special Surprise
+            </h2>
+            <p className="font-elegant text-romantic-deep/80 mb-8">
+              Want to spin the wheel of love and discover your next romantic adventure?
+            </p>
+            <Link
+              to="/spin-wheel"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-romantic-pink to-romantic-rose text-white font-elegant text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              ✨ Spin the Wheel of Love
+            </Link>
           </section>
 
           {/* Footer */}
