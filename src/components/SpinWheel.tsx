@@ -28,9 +28,9 @@ const SpinWheel = () => {
     
     setIsSpinning(true);
     
-    // Random number of rotations (3-6 full rotations plus random angle)
-    const minRotations = 3;
-    const maxRotations = 6;
+    // More realistic spinning - 5-8 full rotations plus random angle
+    const minRotations = 5;
+    const maxRotations = 8;
     const randomRotations = Math.random() * (maxRotations - minRotations) + minRotations;
     const randomAngle = Math.random() * 360;
     const totalRotation = rotation + (randomRotations * 360) + randomAngle;
@@ -42,7 +42,7 @@ const SpinWheel = () => {
     const sliceAngle = 360 / dateIdeas.length;
     const winningIndex = Math.floor((360 - normalizedAngle + sliceAngle/2) / sliceAngle) % dateIdeas.length;
     
-    // Show result after animation completes
+    // Show result after realistic animation completes (4.5 seconds)
     setTimeout(() => {
       setIsSpinning(false);
       const winningDate = dateIdeas[winningIndex];
@@ -57,7 +57,7 @@ const SpinWheel = () => {
           fontWeight: 'bold'
         }
       });
-    }, 3000);
+    }, 4500);
   };
 
   return (
@@ -75,9 +75,10 @@ const SpinWheel = () => {
       <div className="relative">
         {/* Wheel */}
         <div 
-          className="relative w-80 h-80 rounded-full border-8 border-romantic-deep shadow-2xl overflow-hidden transition-transform duration-[3000ms] ease-out"
+          className="relative w-80 h-80 rounded-full border-8 border-romantic-deep shadow-2xl overflow-hidden"
           style={{
             transform: `rotate(${rotation}deg)`,
+            transition: isSpinning ? 'transform 4.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 'none',
             background: `conic-gradient(${sliceColors.map((color, index) => 
               `${color} ${index * 72}deg ${(index + 1) * 72}deg`
             ).join(', ')})`
