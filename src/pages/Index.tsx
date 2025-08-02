@@ -28,7 +28,7 @@ const Index = () => {
         <div className="relative z-10 text-center px-4">
           <h1 className={`font-romantic text-6xl md:text-8xl text-white mb-8 drop-shadow-lg ${showContent ? 'animate-fade-in-up' : 'opacity-0'}`}>Happy Girlfriend's Day, Vivi </h1>
           <p className={`font-elegant text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow ${showContent ? 'animate-fade-in-up animate-delay-1' : 'opacity-0'}`}>
-            A special celebration of our beautiful love story and all the magical moments we've shared together
+            I love you so much, my duniya — my whole world, my everything. You mean more to me than words can ever capture, and every day with you feels like a gift.
           </p>
         </div>
         
