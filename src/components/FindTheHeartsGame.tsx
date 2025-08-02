@@ -81,7 +81,7 @@ const FindTheHeartsGame = () => {
           💝 Find the Hearts Game
         </h4>
         <p className="text-xs text-romantic-deep/80">
-          Find {hearts.length - foundHearts.length} hidden hearts for sweet surprises!
+          Click {hearts.length - foundHearts.length} hidden hearts for sweet surprises!
         </p>
         <div className="flex gap-1 mt-2">
           {hearts.map((_, index) => (
