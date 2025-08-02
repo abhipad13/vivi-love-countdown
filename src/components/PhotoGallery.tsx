@@ -1,7 +1,7 @@
 const PhotoGallery = () => {
   const photos = [{
     id: 1,
-    src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2",
+    src: "https://drive.google.com/file/d/1UhlORvIcjgTcZq6ZPCgBYcyTJdHI5UlY/view?usp=drive_link",
     alt: "Romantic couple photo placeholder",
     caption: "Our first date 💕"
   }, {
