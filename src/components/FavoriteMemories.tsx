@@ -9,19 +9,19 @@ const FavoriteMemories = () => {
     description: "I still remember how nervous I was when I first saw you. Your smile lit up the entire room, and I knew right away that you were someone special. That moment changed my life forever."
   }, {
     id: 2,
-    src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
+    src: "https://i.imgur.com/F1Fo5tl.jpeg",
     alt: "Romantic getaway",
     title: "Our First Trip Together",
     description: "That weekend getaway where we got lost but didn't care because we had each other. We discovered that little café with the amazing pastries and spent hours just talking and dreaming about our future."
   }, {
     id: 3,
-    src: "https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e",
+    src: "https://i.imgur.com/sGOU6Zp.jpeg",
     alt: "Cozy moments",
     title: "Movie Nights & Cuddles",
     description: "All those cozy Friday nights watching movies, sharing popcorn, and falling asleep in each other's arms. These simple moments are the ones I treasure most - just being together is pure magic."
   }, {
     id: 4,
-    src: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46",
+    src: "https://i.imgur.com/ktfIPqv.jpeg",
     alt: "Dancing together",
     title: "Dancing in the Kitchen",
     description: "That random Tuesday when our favorite song came on while we were cooking dinner, and we ended up dancing in the kitchen. No music needed - just your laughter was the perfect soundtrack."
