@@ -91,9 +91,6 @@ const Index = () => {
             <div className="font-romantic text-2xl text-romantic-deep mb-4">
               Made with endless love for Vivi 💖
             </div>
-            <div className="text-romantic-deep/70">
-              Every pixel crafted with love, every word written from the heart
-            </div>
           </footer>
         </>}
     </div>;
