@@ -19,16 +19,6 @@ const PhotoGallery = () => {
     src: "https://images.unsplash.com/photo-1518568814500-bf0f8d125f46",
     alt: "Couple holding hands",
     caption: "Hand in hand 💗"
-  }, {
-    id: 5,
-    src: "https://images.unsplash.com/photo-1511895426328-dc8714191300",
-    alt: "Romantic dinner",
-    caption: "Our anniversary dinner 🥂"
-  }, {
-    id: 6,
-    src: "https://images.unsplash.com/photo-1500653442441-561ecdc83c39",
-    alt: "Adventure together",
-    caption: "Exploring together 🗺️"
   }];
   return <div className="animate-fade-in-up animate-delay-1">
       <h3 className="font-romantic text-4xl text-center text-romantic-deep mb-12">My Prettiest Vivi 📸</h3>
